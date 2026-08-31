@@ -1,0 +1,12 @@
+{
+    "incident": {
+        "incident_id": "SE-2026-001",
+        "timestamp": "2026-08-21 20:42:27.160970",
+        "type": "Phishing email",
+        "reported_by": "Training User",
+        "description": "Suspicious account-verification email reported during awareness exercise",
+        "severity": "MEDIUM"
+    },
+    "response_status": "Response plan generated",
+    "generated_at": "2026-08-21 20:42:55.732690"
+}

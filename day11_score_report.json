@@ -1,0 +1,67 @@
+{
+    "total_questions": 10,
+    "score": 10,
+    "percentage": 100.0,
+    "results": [
+        {
+            "question": "An email asks you to verify your password through a link. What should you do?",
+            "answer_given": "B",
+            "correct_answer": "B",
+            "correct": true
+        },
+        {
+            "question": "You find an unknown USB drive in a parking lot. What should you do?",
+            "answer_given": "B",
+            "correct_answer": "B",
+            "correct": true
+        },
+        {
+            "question": "A caller claims to be IT support and asks for your password. What should you do?",
+            "answer_given": "B",
+            "correct_answer": "B",
+            "correct": true
+        },
+        {
+            "question": "Which is a common social-engineering warning sign?",
+            "answer_given": "A",
+            "correct_answer": "A",
+            "correct": true
+        },
+        {
+            "question": "You receive an unexpected attachment from an unknown sender. What is safest?",
+            "answer_given": "B",
+            "correct_answer": "B",
+            "correct": true
+        },
+        {
+            "question": "A message says your account will be closed in 10 minutes unless you act. What should you do?",
+            "answer_given": "B",
+            "correct_answer": "B",
+            "correct": true
+        },
+        {
+            "question": "What is phishing?",
+            "answer_given": "B",
+            "correct_answer": "B",
+            "correct": true
+        },
+        {
+            "question": "Which action helps protect against impersonation?",
+            "answer_given": "B",
+            "correct_answer": "B",
+            "correct": true
+        },
+        {
+            "question": "What should you do with a suspicious security email?",
+            "answer_given": "A",
+            "correct_answer": "A",
+            "correct": true
+        },
+        {
+            "question": "Which is a safe response to an unexpected request for confidential information?",
+            "answer_given": "B",
+            "correct_answer": "B",
+            "correct": true
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "project": "SE Attack Chain Simulator",
+    "purpose": "Authorized cybersecurity education",
+    "timestamp": "2026-08-21 20:45:42.302053",
+    "modules": {
+        "osint": {
+            "domain": "http://secure-account.example.com/login",
+            "ip": "Unable to resolve"
+        },
+        "profile": {
+            "username": "training_user",
+            "account_age_days": 420,
+            "public_posts": 85,
+            "profile_type": "synthetic training profile",
+            "data_source": "lab-generated data"
+        },
+        "phish": {
+            "url": "http://secure-account.example.com/login",
+            "risk_score": 60,
+            "risk_level": "MEDIUM",
+            "indicators": [
+                "Not using HTTPS",
+                "Suspicious keyword: login",
+                "Suspicious keyword: account",
+                "Suspicious keyword: secure"
+            ]
+        },
+        "template": {
+            "type": "security awareness simulation",
+            "delivery": "disabled",
+            "credential_collection": "disabled"
+        },
+        "ir": {
+            "incident": {
+                "type": "phishing awareness alert",
+                "severity": "MEDIUM",
+                "time": "2026-08-21 20:45:42.301104"
+            },
+            "actions": [
+                "Record the security alert",
+                "Preserve relevant evidence",
+                "Notify the appropriate security team",
+                "Review affected accounts if applicable",
+                "Remove suspicious email rules if unauthorized",
+                "Monitor for additional suspicious activity",
+                "Document lessons learned"
+            ]
+        }
+    }
+}

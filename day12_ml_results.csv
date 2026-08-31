@@ -1,0 +1,2 @@
+total_dataset,phishing_samples,legitimate_samples,training_samples,testing_samples,accuracy,confusion_matrix
+50,25,25,40,10,100,"[[5, 0], [0, 5]]"
