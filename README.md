@@ -1,1117 +1,1215 @@
-# 🔐 Cybersecurity Internship – Phase 1
+# Cybersecurity Internship Program — 30-Day Practical Portfolio
 
-## 15-Day Practical Cybersecurity Internship
+## Sqrock IT Solutions — Cybersecurity Internship Program
 
-**Name:** Hemanth Kumar D  
-**Domain:** Cybersecurity  
-**Duration:** 15 Days  
-**Programming Language:** Python  
-**Platform:** Windows  
-**Environment:** Controlled and Authorized Training Laboratory
+A 30-day hands-on cybersecurity internship portfolio covering Python-based security scripting, social engineering awareness, reconnaissance, web application security, defensive automation, vulnerability analysis, incident response, and security reporting.
 
 ---
 
-## 📌 About This Repository
+## 📌 Internship Overview
 
-This repository contains the practical cybersecurity work completed
-during my 15-day internship.
+This repository contains the practical work completed during a 30-day Cybersecurity Internship Program.
 
-The internship covered practical exercises in:
+The internship was divided into two phases:
 
-- Passive OSINT
-- Email harvesting
-- Phishing URL detection
+### Phase 1 — Social Engineering & Security Awareness
+Days 1–15 focused on:
+
+- OSINT and passive reconnaissance
+- Email harvesting awareness
+- Phishing detection
 - Vishing and smishing awareness
-- GitHub OSINT
-- Phishing awareness
-- Email security
-- Rate-limit defense
-- USB security awareness
-- Fake profile detection
-- Honeypot monitoring
+- Target profiling
+- Spear-phishing awareness
+- Credential attack concepts
+- USB drop awareness
+- Social-media impersonation detection
+- Baiting and watering-hole concepts
 - Security awareness training
-- Machine learning for phishing detection
+- Phishing detection using machine learning
 - SIEM log analysis
 - Incident response
-- Social-engineering attack-chain analysis
+- Social engineering attack-chain simulation
 
-All activities were performed in controlled and authorized
-educational environments.
+### Phase 2 — Web Application Security & Defensive Automation
+Days 16–30 focused on:
+
+- HTTP security headers
+- Local network service exposure
+- SQL injection detection
+- Docker security
+- Web directory auditing
+- XSS input sanitization
+- API rate limiting
+- Database credential auditing
+- Threat intelligence processing
+- File upload validation
+- Custom WAF logic
+- Vulnerability report aggregation
+- SIEM alert automation
+- Incident containment
+- Automated web vulnerability scanning
 
 ---
 
 # 🎯 Internship Objectives
 
-The main objectives of the internship were:
+The main objectives of this internship were to:
 
-- Understand fundamental cybersecurity concepts.
-- Gain hands-on experience with Python-based security tools.
-- Understand passive reconnaissance and OSINT.
-- Identify phishing and social-engineering indicators.
-- Learn basic defensive security controls.
-- Analyze security logs and generate alerts.
-- Understand honeypot monitoring.
-- Apply machine learning to phishing-email classification.
-- Understand the incident-response lifecycle.
-- Develop cybersecurity documentation and reporting skills.
-- Improve troubleshooting and debugging abilities.
+- Develop practical cybersecurity skills using Python.
+- Understand common attack techniques from a defensive perspective.
+- Build security-analysis and detection utilities.
+- Learn how security events can be identified from logs and application data.
+- Understand web application security controls.
+- Practice secure coding and validation techniques.
+- Develop automation for security monitoring and response.
+- Understand vulnerability assessment workflows.
+- Generate structured security reports.
+- Combine individual security components into integrated defensive tools.
 
 ---
 
-# 🛠️ Technologies and Tools
+# 🛠️ Technologies & Tools
 
-### Programming
+## Programming
 
-- Python 3
-- Flask
-- Pandas
-- Scikit-learn
-- Requests
+- Python
 - Regular Expressions
-
-### Data Formats
-
 - JSON
-- CSV
-- HTML
+- HTML escaping
+- Socket programming
+- HTTP handling
 
-### Tools & Environment
-
-- Windows
-- Command Prompt
-- Visual Studio Code
-- Notepad
-- Localhost
-- GitHub
-
-### Cybersecurity Concepts
+## Cybersecurity Concepts
 
 - OSINT
-- DNS
-- WHOIS
-- Phishing
 - Social Engineering
-- Vishing
-- Smishing
-- SPF
-- DKIM
-- DMARC
+- Phishing Detection
+- Security Awareness
+- Network Reconnaissance
+- SQL Injection Detection
+- XSS Detection
 - Rate Limiting
-- USB Security
-- Fake Profile Detection
-- Honeypots
+- Docker Security
+- Database Security
+- Threat Intelligence
+- Magic Bytes Validation
+- Web Application Firewall
+- Vulnerability Management
 - SIEM
-- Machine Learning
 - Incident Response
 
----
+## Python Libraries / Modules
 
-# 📅 DAY 1 – PASSIVE OSINT
-
-### File
-
-`day01_osint_scanner.py`
-
-## Objective
-
-The objective of Day 1 was to understand Open Source Intelligence
-(OSINT) and passive domain information gathering.
-
-## Activities
-
-The laboratory covered:
-
-- Domain information
-- DNS/IP resolution
-- WHOIS information
-- Registrar information
-- Domain dates
-- Name servers
-- IP information
-- Organization information
-- Geolocation-related information
-
-## Security Learning
-
-This exercise demonstrated how publicly available information can
-help security professionals understand an organization's external
-digital footprint.
-
-The activity focused on passive information gathering and did not
-involve active scanning.
+- `requests`
+- `socket`
+- `re`
+- `json`
+- `html`
+- `urllib`
+- `datetime`
+- `platform`
+- `os`
+- `collections`
+- `scikit-learn`
 
 ---
 
-# 📅 DAY 2 – EMAIL HARVESTING
-
-### File
-
-`day02_email_harvester.py`
-
-## Objective
-
-The objective of Day 2 was to demonstrate controlled extraction of
-email addresses from webpage content.
-
-## Activities
-
-The laboratory demonstrated:
-
-- HTML content processing
-- Email pattern matching
-- Regular expressions
-- Controlled webpage analysis
-- Local laboratory testing
-
-## Example Training Data
+# 📁 Repository Structure
 
 ```text
+Cybersecurity-Internship/
+│
+├── README.md
+│
+├── Phase-1/
+│   ├── Day01/
+│   ├── Day02/
+│   ├── Day03/
+│   ├── ...
+│   └── Day15/
+│
+├── Phase-2/
+│   ├── Day16/
+│   ├── Day17/
+│   ├── Day18/
+│   ├── ...
+│   └── Day30/
 
-📅 DAY 3 – PHISHING URL DETECTION
-File
+🔵 PHASE 1 — Social Engineering & Security Awareness
 
-day03_phishing_detector.py
+Phase 1 consisted of 15 days of practical Python-based cybersecurity exercises focused primarily on reconnaissance, social engineering concepts, detection, awareness, and incident response. The official Phase 1 calendar lists Days 1–15 from OSINT through the final Social Engineering Attack Chain Simulator.
 
-Objective
+Day 01 — OSINT & Passive Reconnaissance
+Difficulty
 
-The objective of Day 3 was to create a basic defensive phishing URL
-risk analyzer.
-
-Detection Indicators
-
-The analyzer examined:
-
-HTTPS usage
-Suspicious keywords
-Login-related keywords
-Account-related keywords
-Security-related keywords
-IP addresses in URLs
-Excessive subdomains
-Output
-
-The program generated:
-
-Risk Score
-Risk Level
-Suspicious Indicators
-Example Analysis
-HTTPS Website
-URL        : https://github.com
-Risk Score : 0%
-Risk Level : LOW
-HTTP Website
-URL        : http://example.com
-Risk Score : 30%
-Risk Level : LOW
-
-Indicator:
-
-Not using HTTPS
-Suspicious URL
-URL        : https://login.verify.account.example.com
-Risk Score : 85%
-Risk Level : HIGH
-
-Indicators included:
-
-Suspicious keyword: login
-Suspicious keyword: verify
-Suspicious keyword: account
-Excessive subdomains
-IP-Based URL
-URL        : http://192.0.2.10/login
-Risk Score : 70%
-Risk Level : HIGH
-Security Learning
-
-The exercise demonstrated how multiple URL characteristics can be
-combined to identify potentially suspicious links.
-
-📅 DAY 4 – VISHING & SMISHING AWARENESS
-File
-
-day04_awareness_scripts.py
+Beginner
 
 Objective
 
-The objective of Day 4 was to understand social-engineering
-techniques used through phone calls and messaging platforms.
-
-Scenario 1 – IT Support
-
-Scenario Type: IT Support
-
-Pretext: Urgent account-security notification
-
-Psychological Trigger: Authority + urgency
-
-The scenario demonstrated how an attacker may attempt to use
-authority and urgency to influence a user.
-
-Scenario 2 – Banking
-
-Scenario Type: Banking
-
-Pretext: Suspicious transaction notification
-
-Psychological Trigger: Fear + urgency
-
-The scenario demonstrated how fear and urgency can influence a
-recipient's decision-making.
-
-Scenario 3 – Government Service
-
-Scenario Type: Government Service
-
-Pretext: Important account-verification notice
-
-Psychological Trigger: Authority + fear
-
-Common Red Flags
-Unexpected contact
-Urgency
-Fear-based messaging
-Authority claims
-Requests for confidential information
-Unusual instructions
-Pressure to bypass normal procedures
-Defensive Practices
-
-Users should:
-
-Never disclose passwords to unexpected contacts.
-Never disclose OTPs.
-Never disclose PINs.
-Never disclose banking information.
-Verify requests independently.
-Use official communication channels.
-Report suspicious activity.
-Security Learning
-
-The exercise demonstrated how social engineering relies on
-psychological manipulation rather than purely technical attacks.
-
-📅 DAY 5 – GITHUB OSINT
-File
-
-day05_github_profile.py
-
-Objective
-
-The objective of Day 5 was to understand how publicly available
-GitHub information can be used for OSINT analysis.
-
-Information Analyzed
-
-The laboratory analyzed public profile information such as:
-
-Username
-Name
-Company
-Location
-Public repositories
-Programming languages
-Public biography
-Demonstration Result
-Username      : torvalds
-Name          : Linus Torvalds
-Company       : Linux Foundation
-Location      : Portland, OR
-Public Repos  : 12
-Top Languages
-OpenSCAD : 1
-C        : 8
-C++      : 1
-Evidence
-
-github_profile.json
-
-Security Learning
-
-The exercise demonstrated how publicly available developer
-information can contribute to an OSINT profile.
-
-Only public information was considered.
-
-📅 DAY 6 – PHISHING AWARENESS
-File
-
-day06_phishing_awareness.py
-
-Objective
-
-The objective of Day 6 was to understand common phishing indicators
-and appropriate defensive responses.
-
-Training Concepts
-
-The controlled phishing-awareness exercise demonstrated:
-
-Security notifications
-Account verification requests
-Urgency
-Personalized information
-Suspicious links
-Training Link
-https://training.invalid/awareness-test
-
-The .invalid domain was used as a safe non-functional training
-placeholder.
-
-Phishing Red Flags
-Unexpected security notification
-Pressure to act quickly
-Personalized information used to build trust
-Account-verification request
-Suspicious or unfamiliar link
-Defensive Response
-
-The recommended response was:
-
-Stop and do not respond immediately.
-Verify the request through an official channel.
-Do not trust unexpected links.
-Report suspicious activity.
-Email Security Concepts
-SPF
-
-Sender Policy Framework helps identify mail servers authorized to
-send email for a domain.
-
-DKIM
-
-DomainKeys Identified Mail uses cryptographic signatures to help
-verify email authenticity and integrity.
-
-DMARC
-
-Domain-based Message Authentication, Reporting and Conformance
-provides policies for handling email authentication failures.
-
-Security Learning
-
-Learned how phishing indicators and email authentication
-mechanisms contribute to defensive email security.
-
-📅 DAY 7 – RATE LIMIT DEFENSE LAB
-File
-
-day07_rate_limit_lab.py
-
-Objective
-
-The objective of Day 7 was to demonstrate rate limiting as a
-defensive control against repeated authentication attempts.
-
-Laboratory Configuration
-Server : http://127.0.0.1:5000
-Limit  : 5 attempts per 30 seconds
-Technology
-
-A Flask-based local application was used for the controlled
-authentication laboratory.
-
-Security Concept
-
-Rate limiting restricts the number of requests allowed within a
-defined time period.
-
-This can help reduce repeated automated authentication attempts.
-
-Testing
-
-The local authentication endpoint was tested with repeated
-requests.
-
-Failed authentication responses included:
-
-401 Unauthorized
-
-After the configured request threshold was reached, the defensive
-rate-limit response was:
-
-429 Too Many Requests
-Troubleshooting
-
-During testing, a connection-refused error was encountered:
-
-ConnectionRefusedError: [WinError 10061]
-
-The issue occurred because the Flask server was not running when
-the client attempted to connect.
-
-The issue was resolved by ensuring that the server was running
-before performing the client-side test.
-
-Security Learning
-
-Learned how rate limiting and HTTP 429 Too Many Requests can be
-used as defensive controls against repeated requests.
-
-📅 DAY 8 – USB DROP AWARENESS LAB
-File
-
-day08_usb_awareness.py
-
-Objective
-
-The objective of Day 8 was to understand security risks associated
-with unknown USB devices through a safe simulation.
-
-Simulation
-
-The program explicitly operated as a benign educational simulation.
-
-[SIMULATION] Benign USB payload
-[SIMULATION] No automatic execution configured.
-[SIMULATION] Collecting only local lab system information.
-Evidence
-
-The simulation generated:
-
-recon_log.txt
-
-Security Learning
-
-The exercise demonstrated the importance of:
-
-Avoiding unknown USB devices
-Preventing automatic execution
-Using endpoint protection
-Scanning removable media
-Following organizational USB policies
-Security awareness training
-Result
-
-The controlled USB-drop awareness simulation completed successfully.
-
-📅 DAY 9 – FAKE PROFILE DETECTION LAB
-File
-
-day09_fake_profile_detector.py
-
-Objective
-
-The objective of Day 9 was to identify suspicious characteristics
-in synthetic social-media profiles.
-
-Detection Indicators
-
-The program evaluated:
-
-Account age
-Followers
-Following
-Number of posts
-Profile-picture availability
-Generic/default biography
-Profile A
-Account age       : 7 days
-Followers         : 2
-Following         : 900
-Posts             : 1
-No profile picture: True
-Default bio       : True
-
-Fake score        : 100%
-Risk level        : HIGH
-
-Indicators:
-
-Very new account
-Very high following-to-follower ratio
-No profile picture
-Very few posts
-Generic/default bio
-Profile B
-Account age       : 1200 days
-Followers         : 4500
-Following         : 320
-Posts             : 870
-No profile picture: False
-Default bio       : False
-
-Fake score        : 0%
-Risk level        : LOW
-
-No strong suspicious indicators were detected.
-
-Profile C
-Account age       : 15 days
-Followers         : 8
-Following         : 250
-Posts             : 3
-No profile picture: False
-Default bio       : True
-
-Fake score        : 80%
-Risk level        : HIGH
-
-Indicators:
-
-Very new account
-Very high following-to-follower ratio
-Very few posts
-Generic/default bio
-Profile D
-Account age       : 600 days
-Followers         : 800
-Following         : 500
-Posts             : 120
-No profile picture: False
-Default bio       : False
-
-Fake score        : 0%
-Risk level        : LOW
-
-No strong suspicious indicators were detected.
-
-Profile E
-Account age       : 20 days
-Followers         : 15
-Following         : 200
-Posts             : 4
-No profile picture: True
-Default bio       : True
-
-Fake score        : 100%
-Risk level        : HIGH
-
-Indicators:
-
-Very new account
-Very high following-to-follower ratio
-No profile picture
-Very few posts
-Generic/default bio
-Result Summary
-Profile	Fake Score	Risk Level
-A	100%	HIGH
-B	0%	LOW
-C	80%	HIGH
-D	0%	LOW
-E	100%	HIGH
-Security Learning
-
-Learned how multiple profile characteristics can be combined to
-generate a suspicious-profile risk score.
-
-All profiles used were synthetic training profiles.
-
-📅 DAY 10 – HONEYPOT MONITORING LAB
-File
-
-day10_honeypot_tracker.py
-
-Objective
-
-The objective of Day 10 was to demonstrate basic honeypot
-monitoring and security-event logging in a controlled localhost
-environment.
-
-Laboratory Environment
-Server : http://127.0.0.1:8080
-Training Endpoint
-/lab-bait
-Information Logged
-
-The honeypot recorded:
-
-Timestamp
-Source IP
-Requested path
-Browser user-agent
-Controlled Test Result
-
-A browser request to the laboratory endpoint generated an event:
-
-IP   : 127.0.0.1
-Path : /lab-bait
-
-A browser request for:
-
-/favicon.ico
-
-was also observed.
-
-Evidence
-
-honeypot_log.json
-
-Security Learning
-
-The exercise demonstrated:
-
-Honeypot monitoring
-Security telemetry
-Request logging
-Event collection
-Basic suspicious-activity monitoring
-📅 DAY 11 – SECURITY AWARENESS TRAINING
-File
-
-day11_awareness_training.py
-
-Objective
-
-The objective of Day 11 was to evaluate and reinforce knowledge of
-social-engineering and cybersecurity defensive practices.
-
-Topics Covered
-Phishing
-Social engineering
-Impersonation
-Confidential information
-Verification
-Suspicious messages
-Defensive responses
-Assessment Result
-Score      : 10/10
-Percentage : 100.0%
-Evidence
-
-day11_score_report.json
-
-Security Learning
-
-The assessment reinforced:
-
-Verification of unexpected requests
-Protection of confidential information
-Recognition of suspicious messages
-Avoidance of pressure-based decisions
-Reporting of suspicious activity
-📅 DAY 12 – PHISHING EMAIL DETECTION WITH MACHINE LEARNING
-Files
-
-day12_phishing_ml.py
-
-day12_secure_input.py
-
-Objective
-
-The objective of Day 12 was to develop a basic machine-learning
-model to classify emails as phishing or legitimate.
-
-Dataset
-Total emails : 50
-Phishing     : 25
-Legitimate   : 25
-Dataset Validation
-Dataset validation : PASSED
-Machine Learning Model
-
-A Naive Bayes classification approach was used for the controlled
-email dataset.
-
-Dataset Split
-Training samples : 40
-Testing samples  : 10
-Model Performance
-Accuracy : 100.00%
-Confusion Matrix
-[[5 0]
- [0 5]]
-Classification Report
-              precision    recall  f1-score   support
-
-Legitimate       1.00      1.00      1.00         5
-Phishing         1.00      1.00      1.00         5
-
-accuracy                           1.00        10
-macro avg        1.00      1.00      1.00        10
-weighted avg     1.00      1.00      1.00        10
-Custom Email Predictions
-PHISHING   : Please verify your PayPal login
-LEGITIMATE : Meeting notes from yesterday
-PHISHING   : Urgent update your bank account
-LEGITIMATE : Please review the project report
-Evidence
-
-day12_ml_results.csv
-
-Machine Learning Workflow
-Dataset
-   ↓
-Validation
-   ↓
-Training
-   ↓
-Testing
-   ↓
-Performance Evaluation
-   ↓
-Custom Prediction
-Security Learning
-
-Learned the basic process of applying machine learning to a
-cybersecurity classification problem.
-
-Limitation
-
-The 100% accuracy applies only to the controlled dataset and
-10-sample test set used in this laboratory.
-
-It should not be interpreted as production-level phishing-detection
-performance.
-
-📅 DAY 13 – SIEM LOG ANALYSIS LAB
-File
-
-day13_siem_log_analyzer.py
-
-Objective
-
-The objective of Day 13 was to analyze security logs and identify
-suspicious events using basic SIEM-style detection rules.
-
-Failed Login Analysis
-User            : admin
-Failed attempts : 3
-
-Generated alert:
-
-[ALERT] Possible brute-force activity: admin (3 failures)
-Email Rule Analysis
-User : admin
-Rule : forward_all
-
-Generated alert:
-
-[ALERT] Suspicious email rule created by: admin
-Security Summary
-Failed-login users analyzed : 1
-Email-rule events analyzed  : 1
-Security alerts generated   : 2
-Security Learning
-
-The laboratory demonstrated:
-
-Security-log analysis
-Event identification
-Suspicious-pattern detection
-Alert generation
-SIEM concepts
-Basic security monitoring
-📅 DAY 14 – INCIDENT RESPONSE LAB
-File
-
-day14_incident_response.py
-
-Objective
-
-The objective of Day 14 was to apply a structured incident-response
-workflow to a controlled phishing-awareness incident.
-
-Incident Details
-Incident type : Phishing email
-Reported by   : Training User
-Severity      : MEDIUM
-Description
-Suspicious account-verification email reported during
-awareness exercise
-1. IDENTIFY
-Confirm the reported incident.
-Identify affected accounts.
-Identify affected users and devices.
-Identify relevant messages.
-Preserve email headers and logs.
-2. CONTAIN
-Restrict affected accounts if necessary.
-Block suspicious messages, domains, or indicators.
-Prevent further unauthorized access.
-3. ERADICATE
-Remove malicious messages.
-Remove unauthorized email rules.
-Reset affected credentials through approved procedures.
-Remove unauthorized software or persistence mechanisms.
-4. RECOVER
-Restore affected services safely.
-Monitor accounts and systems.
-Confirm normal operation before closing the incident.
-5. LESSONS LEARNED
-Document what happened.
-Identify security-control weaknesses.
-Improve security awareness training.
-Improve preventive controls.
-Evidence
-
-day14_incident_report.json
-
-Result
-
-The controlled incident-response workflow was completed
-successfully.
-
-📅 DAY 15 – SOCIAL ENGINEERING ATTACK CHAIN SIMULATOR
-File
-
-day15_se_attack_chain.py
-
-Objective
-
-Day 15 was the final integration exercise.
-
-The objective was to combine multiple defensive cybersecurity
-concepts from the previous days into one controlled educational
-simulation.
-
-Available Modules
-[1] OSINT    - Passive domain information
-[2] Profile  - Synthetic profile analysis
-[3] Phish    - Defensive URL risk scoring
-[4] Template - Security awareness simulation
-[5] IR       - Incident response workflow
-[6] Full     - Run complete simulation
-[0] Exit
-Full Simulation
-
-The complete simulation was executed using:
-
-Select module: 6
-Module 1 – Passive OSINT
-
-The simulator processed a controlled training domain.
-
-Result:
-
-[INFO] Passive DNS resolution completed.
-[INFO] No active scanning performed.
-Module 2 – Synthetic Profile
-
-The simulator generated:
-
-username            : training_user
-account_age_days    : 420
-public_posts        : 85
-profile_type        : synthetic training profile
-data_source         : lab-generated data
-
-The simulator confirmed:
-
-[INFO] No real person's profile was collected.
-Module 3 – Phishing URL Scorer
-
-Controlled training URL:
-
-http://secure-account.example.com/login
-Risk Assessment
-Risk Score : 60%
-Risk Level : MEDIUM
-Indicators
-Not using HTTPS
-Suspicious keyword: login
-Suspicious keyword: account
-Suspicious keyword: secure
-Module 4 – Security Awareness Template
-
-The simulator generated a controlled awareness message.
-
-Defensive Response
-Stop and do not respond immediately.
-Verify the request through an official channel.
-Do not trust links from unexpected messages.
-Report suspicious activity through the approved process.
-
-The generated template was explicitly marked:
-
-TRAINING ONLY - DO NOT SEND TO REAL USERS
-Module 5 – Incident Response
-
-The simulator generated a controlled incident:
-
-Type     : phishing awareness alert
-Severity : MEDIUM
-Recommended Defensive Actions
-Record the security alert
-Preserve relevant evidence
-Notify the appropriate security team
-Review affected accounts if applicable
-Remove suspicious email rules if unauthorized
-Monitor for additional suspicious activity
-Document lessons learned
-Final Evidence
-
-day15_final_report.json
-
-🔗 COMPLETE DEFENSIVE WORKFLOW
-
-The final simulation integrated the major concepts learned during
-the internship:
-
-Passive OSINT
-      ↓
-Synthetic Profile Analysis
-      ↓
-Phishing URL Risk Scoring
-      ↓
-Security Awareness
-      ↓
-Incident Response
-      ↓
-Final Report
-📊 15-DAY INTERNSHIP SUMMARY
-Day	Project	Result
-01	Passive OSINT	Domain and public information analysis
-02	Email Harvesting	Controlled email extraction
-03	Phishing URL Detection	URL risk analysis
-04	Vishing & Smishing Awareness	Social-engineering awareness
-05	GitHub OSINT	Public profile analysis
-06	Phishing Awareness	Phishing indicators and email security
-07	Rate Limit Defense	Flask rate-limiting laboratory
-08	USB Drop Awareness	Benign USB security simulation
-09	Fake Profile Detection	5 synthetic profiles analyzed
-10	Honeypot Monitoring	Local security-event logging
-11	Security Awareness Training	10/10 – 100%
-12	ML Phishing Detection	100% test accuracy
-13	SIEM Log Analysis	2 security alerts generated
-14	Incident Response	Structured IR workflow
-15	SE Attack Chain	Integrated defensive simulation
-📁 SOURCE CODE
-day01_osint_scanner.py
-day02_email_harvester.py
-day03_phishing_detector.py
-day04_awareness_scripts.py
-day05_github_profile.py
-day06_phishing_awareness.py
-day07_rate_limit_lab.py
-day08_usb_awareness.py
-day09_fake_profile_detector.py
-day10_honeypot_tracker.py
-day11_awareness_training.py
-day12_phishing_ml.py
-day12_secure_input.py
-day13_siem_log_analyzer.py
-day14_incident_response.py
-day15_se_attack_chain.py
-📄 EVIDENCE AND OUTPUT FILES
-github_profile.json
-honeypot_log.json
-recon_log.txt
-day11_score_report.json
-day12_ml_results.csv
-day14_incident_report.json
-day15_final_report.json
-lab_page.html
-🧠 SKILLS DEVELOPED
-Cybersecurity Skills
-Passive OSINT
-DNS and domain analysis
-Phishing detection
-Social engineering
-Vishing awareness
-Smishing awareness
-Email security
-SPF
-DKIM
-DMARC
-Rate limiting
-USB security awareness
-Fake-profile analysis
-Honeypot monitoring
-SIEM log analysis
-Security alert generation
-Machine learning for phishing detection
-Incident response
-Programming Skills
+Understand passive information gathering without direct target contact.
+
+Concepts
+Open-Source Intelligence
+WHOIS
+DNS
+IP information
+Passive vs active reconnaissance
+Implementation
+
+A Python-based OSINT utility was developed to collect publicly available domain information in an authorized practice environment.
+
+Technologies
 Python
-Flask
-Pandas
-Scikit-learn
-Requests
+python-whois
+requests
+socket
+Result
+
+The exercise demonstrated how publicly available information can be collected and organized for security analysis.
+
+Security Learning
+
+The task demonstrated the importance of reducing unnecessary public exposure and understanding what information an organization unintentionally publishes.
+
+Day 02 — Email Harvesting & Social Engineering Prep
+Difficulty
+
+Beginner
+
+Objective
+
+Understand ethical email collection and the fundamentals of pretexting.
+
+Concepts
+Email harvesting
 Regular expressions
-JSON
-CSV
-HTML
-Professional Skills
-Problem solving
-Debugging
-Troubleshooting
-Security analysis
+Public information
+Pretexting
+Ethical boundaries
+Implementation
+
+A Python-based email extraction utility was created for authorized laboratory content.
+
+Technologies
+Python
+requests
+Regular Expressions
+Result
+
+The exercise demonstrated how publicly visible email addresses can become useful information during social-engineering analysis.
+
+Security Learning
+
+Organizations should minimize unnecessary public exposure of employee information and provide awareness training against social-engineering techniques.
+
+Day 03 — Phishing Page Anatomy & Detection
+Difficulty
+
+Beginner
+
+Objective
+
+Analyze phishing indicators and build a phishing URL detection mechanism rather than creating phishing pages.
+
+Concepts
+Suspicious URLs
+Domain analysis
+HTTPS
+URL structure
+Urgency indicators
+Homograph and subdomain abuse
+Implementation
+
+A Python phishing URL scorer was developed using URL characteristics and suspicious indicators.
+
+Result
+
+URLs were evaluated and assigned risk scores based on defined security indicators.
+
+Security Learning
+
+URL inspection and awareness can help users recognize suspicious links before interacting with them.
+
+Day 04 — Vishing & Smishing Simulation Scripts
+Difficulty
+
+Beginner
+
+Objective
+
+Understand voice and SMS-based social-engineering techniques for awareness training.
+
+Concepts
+Vishing
+Smishing
+Authority
+Fear
+Urgency
+Trust manipulation
+Implementation
+
+A Python-based awareness script generator was created to model social-engineering scenarios.
+
+Result
+
+Training scenarios demonstrated common psychological triggers and corresponding defensive red flags.
+
+Security Learning
+
+Legitimate support personnel should not request passwords or sensitive authentication information through unsolicited calls or messages.
+
+Day 05 — OSINT + SE: Build a Target Profile
+Difficulty
+
+Intermediate
+
+Objective
+
+Understand how publicly available information can be combined into a security profile.
+
+Concepts
+Public profiles
+GitHub information
+Technology stacks
+Public repositories
+Digital footprint
+Implementation
+
+A Python utility was designed to aggregate public GitHub information into structured JSON data.
+
+Result
+
+Public information was organized into a structured profile for defensive exposure analysis.
+
+Security Learning
+
+Reducing unnecessary public technical and personal information can reduce social-engineering exposure.
+
+Day 06 — Spear Phishing Email Craft (Lab Only)
+Difficulty
+
+Intermediate
+
+Objective
+
+Understand personalized phishing characteristics for security-awareness training.
+
+Concepts
+Spear phishing
+Personalization
+Sender spoofing
+Security awareness
+DMARC
+SPF
+DKIM
+Implementation
+
+A controlled training email-template generator was developed for awareness purposes.
+
+Result
+
+The exercise demonstrated how personalization can increase perceived credibility and why email authentication controls are important.
+
+Security Learning
+
+Email authentication and user awareness are important defenses against targeted phishing.
+
+Day 07 — Password Attacks & Credential Stuffing
+Difficulty
+
+Intermediate
+
+Objective
+
+Understand brute-force logic and develop defensive rate-limit concepts.
+
+Concepts
+Brute force
+Dictionary attacks
+Credential stuffing
+Account lockout
+CAPTCHA
+MFA
+Implementation
+
+The exercise used a controlled local testing concept to demonstrate repeated authentication attempts and defensive rate limiting.
+
+Result
+
+The task demonstrated why authentication endpoints require request controls.
+
+Security Learning
+
+MFA, rate limiting, account lockout controls, and monitoring can reduce authentication attack risk.
+
+Day 08 — USB Drop Attack Simulation
+Difficulty
+
+Intermediate
+
+Objective
+
+Understand USB-drop risks through a benign local simulation.
+
+Concepts
+USB drop attacks
+AutoRun abuse
+Endpoint security
+User awareness
+Data-loss prevention
+Implementation
+
+A benign Python simulation recorded basic system information to a local output file.
+
+Result
+
+The exercise demonstrated how removable-media attacks can create security risks.
+
+Security Learning
+
+Organizations should control removable media and educate users about unknown USB devices.
+
+Day 09 — Social Media Impersonation & Fake Profile Detection
+Difficulty
+
+Intermediate
+
+Objective
+
+Identify suspicious social-media profiles using behavioral heuristics.
+
+Concepts
+Fake profiles
+Bot indicators
+Follower/following ratios
+Account age
+Profile completeness
+Implementation
+
+A Python scoring mechanism evaluated synthetic profile characteristics.
+
+Result
+
+Profiles received a calculated risk score based on defined indicators.
+
+Security Learning
+
+Behavioral indicators can support identification of suspicious accounts, although individual indicators should not be treated as definitive proof.
+
+Day 10 — Baiting & Watering Hole Attack Simulation
+Difficulty
+
+Intermediate
+
+Objective
+
+Understand baiting and watering-hole concepts and develop a defensive honeypot-style tracker.
+
+Concepts
+Baiting
+Watering holes
+Honeypots
+Web logging
+Defensive monitoring
+Implementation
+
+A local Python HTTP server was used to record simulated requests.
+
+Result
+
+Request information could be captured and analyzed within the controlled environment.
+
+Security Learning
+
+Monitoring and logging can help security teams identify suspicious access patterns.
+
+Day 11 — Social Engineering Awareness Training Module
+Difficulty
+
+Intermediate
+
+Objective
+
+Develop an interactive security-awareness quiz.
+
+Concepts
+Social-engineering awareness
+Scenario-based training
+User decision making
+Security education
+Implementation
+
+A Python command-line quiz engine was developed with questions, answers, explanations, and score tracking.
+
+Result
+
+The quiz provided immediate feedback and generated a score.
+
+Security Learning
+
+Security awareness training helps users recognize suspicious requests and social-engineering indicators.
+
+Day 12 — Phishing Email Detection with ML
+Difficulty
+
+Advanced
+
+Objective
+
+Build a basic machine-learning classifier for phishing email detection.
+
+Concepts
+Natural Language Processing
+Naive Bayes
+Feature extraction
+Text classification
+Implementation
+
+A small labeled dataset was processed using a machine-learning pipeline.
+
+Technologies
+Python
+scikit-learn
+CountVectorizer
+Multinomial Naive Bayes
+Result
+
+The classifier categorized test messages into phishing or legitimate classes.
+
+Security Learning
+
+Machine learning can assist security teams in prioritizing suspicious email content, but model quality depends heavily on training data.
+
+Day 13 — SIEM Log Analysis for SE Attack Detection
+Difficulty
+
+Advanced
+
+Objective
+
+Parse security logs to identify social-engineering-related anomalies.
+
+Concepts
+SIEM
+Authentication logs
+Failed logins
+Email-rule creation
+Anomaly detection
+Implementation
+
+A Python log parser analyzed synthetic security events and generated alerts.
+
+Result
+
+Suspicious login and email-rule activity could be identified from log patterns.
+
+Security Learning
+
+Centralized security logs provide important evidence for detecting abnormal account activity.
+
+Day 14 — SE Incident Response Plan
+Difficulty
+
+Advanced
+
+Objective
+
+Develop an automated social-engineering incident-response workflow.
+
+Concepts
+Preparation
+Identification
+Containment
+Eradication
+Recovery
+Lessons learned
+Implementation
+
+A Python incident-response utility generated response actions and stored a JSON incident report.
+
+Result
+
+The exercise demonstrated how security alerts can trigger structured response procedures.
+
+Security Learning
+
+Fast identification, containment, documentation, and recovery are important parts of incident response.
+
+Day 15 — Final Project: SE Attack Chain Simulator
+Difficulty
+
+Expert
+
+Objective
+
+Integrate the major Phase 1 components into a unified social-engineering simulation.
+
+Integrated Components
+OSINT
+Target profiling
+Phishing URL scoring
+Security-awareness email templates
+Incident-response workflow
+Result
+
+The final Phase 1 project demonstrated how separate security modules can be combined into a single command-line workflow.
+
+Security Learning
+
+An end-to-end security workflow requires coordination between reconnaissance, detection, awareness, and response.
+
+🟢 PHASE 2 — Web Application Security & Defensive Automation
+
+Phase 2 moved from human-focused security concepts toward technical asset analysis, custom defensive scripting, mitigation automation, and infrastructure security assessments. The official Phase 2 calendar covers Days 16–30.
+
+Day 16 — HTTP Security Header Analysis
+Difficulty
+
+Beginner
+
+Objective
+
+Analyze HTTP response headers and evaluate important browser security controls.
+
+Implementation
+
+A localhost HTTP security-header analyzer was created.
+
+Headers Evaluated
+Content-Security-Policy
+X-Content-Type-Options
+X-Frame-Options
+Referrer-Policy
+Permissions-Policy
+Result
+
+The local test server was configured with security headers and the analyzer verified their presence.
+
+Security Learning
+
+Security headers provide browser-level protections against several classes of web attacks.
+
+Day 17 — Local Network Port & Service Scanning
+Difficulty
+
+Beginner
+
+Objective
+
+Discover selected local sockets to evaluate service exposure.
+
+Implementation
+
+A Python socket scanner tested selected ports on:
+
+127.0.0.1
+Ports Tested
+22
+80
+443
+5432
+8080
+Result
+
+The selected localhost ports were checked and the service exposure was recorded.
+
+Security Learning
+
+Identifying unnecessary exposed services is an important part of reducing attack surface.
+
+Day 18 — SQL Injection (SQLi) Log Detection Engine
+Difficulty
+
+Intermediate
+
+Objective
+
+Analyze web logs for SQL-injection indicators.
+
+Implementation
+
+A Python log-analysis engine inspected synthetic access-log entries using regular expressions.
+
+Detection Indicators
+Quote characters
+SQL comments
+UNION SELECT
+Logical SQL conditions
+Result
+
+Suspicious SQL-injection patterns were detected in the mock logs.
+
+Security Learning
+
+Log analysis can help security teams identify attempted injection activity and investigate suspicious requests.
+
+Day 19 — Docker Container Misconfiguration Scanner
+Difficulty
+
+Intermediate
+
+Objective
+
+Audit Docker build specifications for insecure configuration patterns.
+
+Checks
+Unpinned latest image tags
+SSH port exposure
+Missing explicit USER directive
+Implementation
+
+A Python static-analysis script inspected a synthetic Dockerfile.
+
+Result
+
+Three configuration risks were identified.
+
+Security Learning
+
+Secure container configuration should minimize privileges, avoid unnecessary exposed services, and use controlled image versions.
+
+Day 20 — Web Directory Brute-Force Simulation
+Difficulty
+
+Intermediate
+
+Objective
+
+Audit selected web paths in a controlled local environment.
+
+Paths Tested
+/admin
+/dashboard
+/api/v1
+/.env
+/backup.sql
+Result
+
+The selected localhost paths returned HTTP 404 and no tested sensitive routes were accessible.
+
+Security Learning
+
+Restricting sensitive files and administrative routes helps reduce unintended information exposure.
+
+Day 21 — Cross-Site Scripting (XSS) Payload Sanitizer
+Difficulty
+
+Intermediate
+
+Objective
+
+Neutralize common client-side injection patterns through input encoding and filtering.
+
+Implementation
+
+The sanitizer used:
+
+HTML escaping
+Regular-expression filtering
+Synthetic test inputs
+Result
+
+Ten test parameters were processed and common active XSS patterns were neutralized.
+
+Security Learning
+
+Context-appropriate output encoding and secure input handling are important defenses against XSS.
+
+Day 22 — API Rate Limiting Token Bucket Logic
+Difficulty
+
+Intermediate
+
+Objective
+
+Implement stateful request-rate controls.
+
+Configuration
+Bucket capacity : 5 tokens
+Refill rate     : 1 token/second
+Result
+
+The simulation allowed requests while tokens were available and throttled requests after the bucket was exhausted.
+
+Security Learning
+
+Rate limiting can help control excessive request activity and protect application availability.
+
+Day 23 — Postgres Database Credential Auditing
+Difficulty
+
+Advanced
+
+Objective
+
+Audit simulated database credential configurations for default or weak credentials.
+
+Implementation
+
+A local simulation reviewed PostgreSQL credential pairs.
+
+Result
+
+A default/weak postgres:postgres configuration was identified as a critical finding.
+
+Security Learning
+
+Default credentials should be removed and database access should follow strong authentication and least-privilege principles.
+
+Day 24 — Automated Threat Intel IP Blocking Pipeline
+Difficulty
+
+Advanced
+
+Objective
+
+Process threat-intelligence indicators and update a simulated local defensive blocklist.
+
+Implementation
+
+Synthetic indicators were validated and categorized by confidence.
+
+Result
+
+Valid indicators were added to a simulated local blocklist while invalid indicators were rejected.
+
+Security Learning
+
+Threat-intelligence automation can help security teams process indicators consistently and quickly.
+
+Day 25 — File Upload Vulnerability & Magic Bytes Validator
+Difficulty
+
+Advanced
+
+Objective
+
+Validate uploaded files using their actual file signatures rather than relying only on file extensions.
+
+File Types Tested
+PNG
+PDF
+Fake PNG
+Unsupported executable extension
+Result
+
+Valid files were accepted while mismatched and unsupported files were rejected.
+
+Security Learning
+
+File-signature validation provides an additional security control against extension-based upload bypasses.
+
+Day 26 — Building a Custom Web Application Firewall (WAF) Engine
+Difficulty
+
+Advanced
+
+Objective
+
+Construct middleware-style logic that inspects HTTP request patterns and blocks suspicious payloads.
+
+WAF Rules
+SQL Injection
+XSS
+Path Traversal
+Command Injection
+Result
+
+Eight synthetic requests were inspected:
+
+Requests inspected : 8
+Requests allowed   : 4
+Requests blocked   : 4
+WAF rules active   : 4
+Security Learning
+
+A WAF can inspect incoming application traffic and apply predefined security rules before suspicious requests reach application logic.
+
+Day 27 — Automated Vulnerability Report Aggregator
+Difficulty
+
+Advanced
+
+Objective
+
+Combine findings from multiple security tools into a unified report.
+
+Simulated Sources
+Bandit
+Trivy
+Result
+
+The aggregator consolidated four findings:
+
+CRITICAL : 0
+HIGH     : 2
+MEDIUM   : 1
+LOW      : 1
+
+The overall simulated risk level was:
+
+HIGH RISK
+Security Learning
+
+Unified vulnerability reporting reduces fragmented information and helps prioritize remediation.
+
+Day 28 — SIEM Alert Trigger Automation via Webhooks
+Difficulty
+
+Advanced
+
+Objective
+
+Create automated notification logic for important SIEM security events.
+
+Implementation
+
+Synthetic SIEM alerts were processed according to severity.
+
+Result
+Alerts processed    : 4
+Webhook triggers    : 2
+Alerts not triggered: 2
+
+HIGH and CRITICAL events generated simulated webhook payloads.
+
+No external webhook request was performed.
+
+Security Learning
+
+Automated alert routing can reduce response time and help security teams prioritize critical events.
+
+Day 29 — Incident Containment & Asset Isolation Scripting
+Difficulty
+
+Advanced
+
+Objective
+
+Model automated incident-containment procedures for a compromised asset.
+
+Implementation
+
+A local simulation represented:
+
+Session revocation
+Quarantine controls
+External network restriction
+Incident-response workflow
+Result
+
+The test asset was marked for isolation in the simulation.
+
+No actual firewall, network, or active-session changes were performed.
+
+Security Learning
+
+Automated containment can help reduce the impact of a security incident when properly integrated with authorized infrastructure controls.
+
+🏆 Day 30 — Final Project: Automated Web Vulnerability Scanner
+Difficulty
+
+Expert
+
+Objective
+
+Integrate reconnaissance, vulnerability checks, and report generation into one cohesive command-line application.
+
+Final Project Components
+
+The scanner integrates:
+
+Target Reconnaissance
+        ↓
+Security Header Audit
+        ↓
+Local Path Audit
+        ↓
+Vulnerability Pattern Checks
+        ↓
+Security Report Generation
+Testing Environment
+
+The final implementation was tested against:
+
+http://127.0.0.1:8080
+Final Scan Results
+HTTP Status      : 200
+Total findings   : 6
+HIGH findings    : 2
+MEDIUM findings  : 4
+LOW findings     : 0
+Overall status   : HIGH RISK
+Findings
+
+The scanner identified:
+
+Missing Content-Security-Policy
+Missing X-Content-Type-Options
+Missing X-Frame-Options
+Missing Referrer-Policy
+Synthetic SQL injection pattern
+Synthetic XSS pattern
+
+The selected sensitive paths returned HTTP 404.
+
+Security Learning
+
+The final project demonstrated how multiple defensive security checks can be combined into an automated assessment workflow.
+
+The official Phase 2 specification defines the final project as an integration of reconnaissance, vulnerability checks, and report generation, with the final deliverable being the scanner source repository and a comprehensive technical report.
+
+📊 Internship Progress Summary
+Phase 1
+Area	Completed
+OSINT & Reconnaissance	✅
+Social Engineering Awareness	✅
+Phishing Detection	✅
+Security Awareness	✅
+SIEM Analysis	✅
+Incident Response	✅
+Final SE Simulation	✅
+Phase 2
+Area	Completed
+Web Security	✅
+Network Security	✅
+Secure Coding	✅
+Container Security	✅
+Database Security	✅
+Threat Intelligence	✅
+WAF	✅
+Vulnerability Management	✅
+SIEM Automation	✅
+Incident Containment	✅
+Final Vulnerability Scanner	✅
+🧠 Key Skills Developed
+
+During the internship, the following practical skills were developed:
+
+Python Security Scripting
+File processing
+JSON handling
+Regular expressions
+Socket programming
+HTTP communication
+Input validation
+Security automation
+Web Security
+HTTP security headers
+XSS
+SQL injection detection
+Path exposure
+WAF concepts
+File upload validation
+Infrastructure Security
+Local port scanning
+Docker configuration auditing
+PostgreSQL security
+Threat-intelligence processing
+Security Operations
+Log analysis
+SIEM concepts
+Alert generation
+Webhook automation
+Vulnerability aggregation
+Incident containment
+Reporting
+Security findings
+Severity classification
+Executive summaries
+Remediation recommendations
 Evidence collection
-Result interpretation
-Technical documentation
-Incident reporting
-📈 LEARNING OUTCOMES
+🔐 Ethical & Legal Security Statement
 
-The internship provided practical exposure to the defensive
-cybersecurity lifecycle.
+All practical exercises in this repository are intended for educational and authorized defensive-security purposes.
 
-Information Gathering
-        ↓
-Threat Identification
-        ↓
-Phishing Analysis
-        ↓
+The internship curriculum specifies that activities must be performed only within authorized laboratory environments and prohibits unauthorized testing against real users, companies, or infrastructure.
+
+The Phase 2 curriculum similarly specifies isolated, authorized local lab environments and prohibits unauthorized real-world scanning.
+
+The practical Phase 2 implementations completed in this repository were kept within controlled or simulated environments where applicable.
+
+Security Principles Followed
+Authorized testing only
+Local laboratory testing
+No unauthorized target scanning
+No real credential attacks
+No real firewall modifications
+No external webhook dispatching during simulations
+Synthetic security data where appropriate
+No storage of real credentials or sensitive information
+📸 Evidence
+
+Evidence screenshots are maintained separately from source code.
+
+Recommended organization:
+
+Evidence/
+│
+├── Day01/
+├── Day02/
+├── Day03/
+├── Day04/
+├── Day05/
+├── Day06/
+├── Day07/
+├── Day08/
+├── Day09/
+├── Day10/
+├── Day11/
+├── Day12/
+├── Day13/
+├── Day14/
+├── Day15/
+├── Day16/
+├── Day17/
+├── Day18/
+├── Day19/
+├── Day20/
+├── Day21/
+├── Day22/
+├── Day23/
+├── Day24/
+├── Day25/
+├── Day26/
+├── Day27/
+├── Day28/
+├── Day29/
+└── Day30/
+
+Each folder should contain the relevant execution screenshot or approved output evidence for that day's task.
+
+📋 30-Day Task Calendar
+Day	Task	Difficulty
+01	OSINT & Passive Reconnaissance	Beginner
+02	Email Harvesting & Social Engineering Prep	Beginner
+03	Phishing Page Anatomy & Detection	Beginner
+04	Vishing & Smishing Simulation Scripts	Beginner
+05	OSINT + SE: Build a Target Profile	Intermediate
+06	Spear Phishing Email Craft (Lab Only)	Intermediate
+07	Password Attacks & Credential Stuffing	Intermediate
+08	USB Drop Attack Simulation	Intermediate
+09	Social Media Impersonation & Fake Profile Detection	Intermediate
+10	Baiting & Watering Hole Attack Simulation	Intermediate
+11	Social Engineering Awareness Training Module	Intermediate
+12	Phishing Email Detection with ML	Advanced
+13	SIEM Log Analysis for SE Attack Detection	Advanced
+14	SE Incident Response Plan	Advanced
+15	Final Project: SE Attack Chain Simulator	Expert
+16	HTTP Security Header Analysis	Beginner
+17	Local Network Port & Service Scanning	Beginner
+18	SQL Injection (SQLi) Log Detection Engine	Intermediate
+19	Docker Container Misconfiguration Scanner	Intermediate
+20	Web Directory Brute-Force Simulation	Intermediate
+21	Cross-Site Scripting (XSS) Payload Sanitizer	Intermediate
+22	API Rate Limiting Token Bucket Logic	Intermediate
+23	Postgres Database Credential Auditing	Advanced
+24	Automated Threat Intel IP Blocking Pipeline	Advanced
+25	File Upload Vulnerability & Magic Bytes Validator	Advanced
+26	Building a Custom Web Application Firewall (WAF) Engine	Advanced
+27	Automated Vulnerability Report Aggregator	Advanced
+28	SIEM Alert Trigger Automation via Webhooks	Advanced
+29	Incident Containment & Asset Isolation Scripting	Advanced
+30	Final Project: Automated Web Vulnerability Scanner	Expert
+📈 Overall Outcome
+
+The 30-day internship provided practical exposure to multiple areas of cybersecurity, progressing from foundational security concepts toward automated defensive tooling.
+
+The progression can be summarized as:
+
 Security Awareness
         ↓
-Defensive Controls
+OSINT & Reconnaissance
         ↓
-Security Monitoring
+Threat Detection
         ↓
-SIEM Analysis
+Web Security
         ↓
-Machine Learning
+Infrastructure Security
         ↓
-Incident Response
+Security Automation
         ↓
-Lessons Learned
+SIEM & Incident Response
+        ↓
+Vulnerability Management
+        ↓
+Integrated Security Scanner
 
-The internship strengthened my ability to:
+The final project consolidated several defensive techniques into a single automated web vulnerability assessment workflow.
 
-Develop Python-based cybersecurity tools
-Analyze security-related data
-Identify suspicious indicators
-Interpret security alerts
-Troubleshoot technical issues
-Collect and document evidence
-Apply defensive cybersecurity concepts
-Prepare technical documentation
-🏆 INTERNSHIP OUTCOME
+🚀 Future Improvements
 
-By completing the 15-day practical cybersecurity program, I gained
-hands-on exposure to multiple areas of defensive security.
+Potential future improvements to the project include:
 
-The internship combined programming, security analysis, monitoring,
-machine learning, awareness training, and incident response into a
-single practical learning experience.
+Modularizing individual security scanners.
+Adding structured JSON/CSV report exports.
+Improving error handling.
+Adding unit tests.
+Adding configurable scanning policies.
+Adding severity-based reporting.
+Adding a centralized logging system.
+Developing a graphical reporting interface.
+Integrating approved security tools in controlled environments.
+Adding automated remediation verification.
+📚 Learning Outcome
 
-The final Day 15 project integrated the knowledge gained throughout
-the internship into a controlled social-engineering attack-chain
-simulation.
+By completing the internship, practical understanding was developed in:
 
-🔒 ETHICAL AND SAFETY STATEMENT
+Cybersecurity fundamentals
+Python security programming
+Security monitoring
+Web application security
+Network security
+Secure configuration
+Threat intelligence
+Vulnerability assessment
+SIEM concepts
+Incident response
+Security automation
+Technical security reporting
+🏁 Conclusion
 
-All activities in this repository were performed for authorized
-educational and defensive cybersecurity training.
+This 30-day Cybersecurity Internship Program provided a structured progression from security awareness and reconnaissance to technical security analysis and defensive automation.
 
-The exercises used controlled environments, synthetic data,
-localhost services, training domains, simulated events, and
-non-functional training resources where applicable.
+Phase 1 established foundational knowledge in OSINT, social engineering awareness, phishing detection, SIEM analysis, and incident response.
 
-No unauthorized access to systems, accounts, networks, or private
-information was intended.
+Phase 2 expanded this foundation into web application security, network exposure analysis, container security, database auditing, threat intelligence, WAF logic, vulnerability management, SIEM automation, incident containment, and automated vulnerability scanning.
 
-Security testing and analysis should only be performed on systems,
-applications, networks, and accounts where explicit permission has
-been provided.
+The final project demonstrated the ability to combine multiple defensive security concepts into a cohesive Python-based security assessment workflow.
 
-👤 AUTHOR
-Hemanth Kumar D
+⚠️ Disclaimer
 
-Cybersecurity Internship – Phase 1
+This repository is maintained for educational and authorized cybersecurity training purposes.
 
-GitHub: Hemanth0511-sist
+All security testing should be performed only on systems that are owned by the tester or where explicit authorization has been provided.
 
-📌 DISCLAIMER
+Unauthorized scanning, credential attacks, phishing, exploitation, or access to systems without permission is not permitted.
 
-This repository is intended strictly for authorized educational and
-defensive cybersecurity purposes.
+⭐ Internship Status
+PHASE 1 : COMPLETED ✅
+PHASE 2 : COMPLETED ✅
+DAYS    : 30 / 30
+STATUS  : COMPLETED
+🔗 Repository Contents
 
-Security testing and analysis should only be performed on systems,
-applications, networks, and accounts where explicit permission has
-been provided.
-it-support@lab.example
-security@lab.example
-training@lab.example
+This repository contains:
+
+Python cybersecurity scripts
+Defensive security utilities
+Local security simulations
+Vulnerability-analysis tools
+Security reports
+Execution evidence
+Final automated web vulnerability scanner
+
+Cybersecurity Internship — 30-Day Practical Portfolio
+
+
+### Important
+
+I kept the **official task names** from your internship PDFs rather than replacing them with different names. For example, the official Phase 2 calendar calls Day 20 **“Web Directory Brute-Force Simulation”**, Day 26 **“Building a Custom Web Application Firewall (WAF) Engine”**, and Day 30 **“Final Project: Automated Web Vulnerability Scanner.”** :contentReference[oaicite:6]{index=6}
+
+One thing I would **not** put in the README is fabricated claims such as “100% secure,” “industry certified,” or an invented internship grade. Your Phase 1 document specifies that working code, written analysis, submitted deliverables, and code quality are separate grading components, so the README should document the actual work rather than invent a score. :contentReference[oaicite:7]{index=7}
+
+**Next, we should prepare the professional final internship report** covering 
